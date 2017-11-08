@@ -8,7 +8,7 @@ function ClozeCard(text, cloze) {
 
     if (text.indexOf(cloze) === -1) {
       console.log('ERROR');
-      this.partial = -1;
+      this.partial = null;
     }
     else {
       this.partial = text.replace(re, '...');
@@ -18,13 +18,9 @@ function ClozeCard(text, cloze) {
     return new ClozeCard(text, cloze);
   }
 
-  /*
-  * The constructor should throw or log an error when 
-  * the cloze deletion does _not_ appear in the input text.
-  */
-
   //* Use prototypes to attach these methods, wherever possible.
 }
+
 // ClozeCard.prototype.partial = setPartial(this.fullText, this.cloze);
 
 // function setPartial(text, cloze) {
