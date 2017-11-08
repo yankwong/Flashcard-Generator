@@ -1,5 +1,5 @@
-var BasicCard = require('./BasicCard');
-var ClozeCard = require('./ClozeCard');
+const BasicCard = require('./BasicCard');
+const ClozeCard = require('./ClozeCard');
 
 var firstPresident = new BasicCard(
     "Who was the first president of the United States?", "George Washington");
