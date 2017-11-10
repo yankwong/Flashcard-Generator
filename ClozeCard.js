@@ -17,20 +17,7 @@ function ClozeCard(text, cloze) {
   else {
     return new ClozeCard(text, cloze);
   }
-
-  //* Use prototypes to attach these methods, wherever possible.
 }
 
-// ClozeCard.prototype.partial = setPartial(this.fullText, this.cloze);
-
-// function setPartial(text, cloze) {
-//   if (text.indexOf(cloze) === -1) {
-//     throw new Error("ERROR!!");
-//   }
-//   else {
-//     var re = new RegExp(this.cloze, 'g');
-//     return text.replace(re, '...');
-//   }
-// }
 
 module.exports = ClozeCard;
